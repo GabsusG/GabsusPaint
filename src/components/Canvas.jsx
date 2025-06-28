@@ -15,6 +15,8 @@ export default function Canvas({ color = "black", brushSize = 4 }) {
     canvas.height = canvas.offsetHeight;
   }, []);
 
+
+
   const saveState = () => {
     const canvas = canvasRef.current;
     setUndoStack((prev) => [...prev, canvas.toDataURL()]);
@@ -98,7 +100,7 @@ export default function Canvas({ color = "black", brushSize = 4 }) {
   };
 
   return (
-    <div className="relative w-full max-w-4xl h-[400px] bg-gray-100 rounded-xl shadow-lg">
+   <div className="relative w-full max-w-4xl h-[400px] bg-gray-100 rounded-xl shadow-lg">
       <CanvasControls
         onUndo={undo}
         onRedo={redo}

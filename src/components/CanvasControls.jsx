@@ -7,7 +7,7 @@ export default function CanvasControls({
   onClear,
 }) {
   return (
-    <div className="absolute top-2 right-2 flex gap-2 z-20">
+<div className="absolute top-2 right-2 flex flex-col sm:flex-row gap-2 z-20">
       <button
         onClick={onUndo}
         className="w-10 h-10 rounded-full bg-white border border-purple-300 shadow hover:bg-purple-100"
